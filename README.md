@@ -36,4 +36,7 @@ h-box 特色：<br>
    - 支持以下导入<br>
    - pornhub,xvideo,xnxx,xhamster,91porn,hentaiworld,uncensoredhentai,animeidhentai...15+ (我想你知道我在说什么-_-)<br>
    欢迎提BUG以及功能改进。<br>
-   加入讨论组一起学习 [t.me/hboxapp](https://t.me/hboxapp)
+   加入讨论组一起学习 [t.me/hboxapp](https://t.me/hboxapp)<br>
+<img src="https://github.com/alishanjack/h-box/blob/main/img/91porn1.png" width="450" height="270"><img src="https://github.com/alishanjack/h-box/blob/main/img/hentai1.png" width="450" height="270">
+<img src="https://github.com/alishanjack/h-box/blob/main/img/pornhub1.png" width="450" height="270"><img src="https://github.com/alishanjack/h-box/blob/main/img/tag.jpg" width="450" height="270">
+<img src="https://github.com/alishanjack/h-box/blob/main/img/xhamster1.png" width="450" height="270"><img src="https://github.com/alishanjack/h-box/blob/main/img/xvideos1.png" width="450" height="270">
