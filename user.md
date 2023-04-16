@@ -61,6 +61,6 @@
   ![](https://github.com/alishanjack/h-box/blob/main/img/rule.jpg)
 - Finally<br>
   Like-minded welcome to exchange.
-- 视频<br>
+- Gif<br>
   ![](https://github.com/alishanjack/h-box/blob/main/img/H-box.gif)  
   
