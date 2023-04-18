@@ -1,5 +1,5 @@
 [DOWNLOAD](https://github.com/alishanjack/h-box/releases)
-# V2.0.1 release
+# V2.0.2 release
 - BUG fix
 # V2.0.1 release
 新功能:
