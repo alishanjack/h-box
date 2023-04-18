@@ -1,3 +1,6 @@
+[DOWNLOAD](https://github.com/alishanjack/h-box/releases)
+# V2.0.1 release
+- BUG fix
 # V2.0.1 release
 新功能:
 - 支持20 站点解析
