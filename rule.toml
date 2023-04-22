@@ -1,4 +1,4 @@
-['91porn.com,9p234.com,91p46.com,wonderfulday25.live']
+['91porn.com,9p234.com,91p46.com,wonderfulday25.live,91splt.app']
 type='m3u8'
 video=['https://.*\.m3u8']
 pic.re='//video[@id="player_one_html5_api"]'
@@ -161,10 +161,5 @@ video=['https://cdn\d+-videos.motherlessmedia.com/videos/.*\.mp4']
 pic.re='//meta[@property="og:image"]'
 pic.value='content'
 ico='https://motherless.com/favicon.ico'
-
-
-
-
-
-
-
+['optimize']
+url='xvideos.com,xnxx.com,pornhub.com,91porn.com,9p234.com,91p46.com,wonderfulday25.live,91splt.app'
