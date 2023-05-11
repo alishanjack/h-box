@@ -1,0 +1,38 @@
+[left]
+home="home"
+collect="collect"
+tags="tags"
+history="history"
+import="import"
+netdown="netdown"
+setting="setting"
+[home]
+tip="Go to import or download your favorite video"
+title="title"
+img="img"
+net="net url"
+edit="edit mode"
+[collect]
+tip="Go and add your favorite"
+title="title: "
+addtime="addtime: "
+views="views: "
+[tag]
+title="title"
+desc="descrption"
+img="img"
+[history]
+tip="Nothing"
+[imp]
+tip="Drag the video here, preferably in MP4 format"
+[netdown]
+urltext="please input download url"
+title="title"
+feng="cover page"
+headless="chrome headless,If some websites cannot be parsed in headless mode, you can choose to close and manually assist."
+sync="sync chrome data"
+clear="clear input"
+[setting]
+lang="language"
+privacy="privacy protect"
+datadir="datadir"

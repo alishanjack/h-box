@@ -1,0 +1,6 @@
+[left]
+bg='#6272a4'
+b_hover='white'
+b_click='#717DD7'
+[config]
+version='v2.0.4'

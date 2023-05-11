@@ -1,0 +1,167 @@
+import QtQuick 2.15
+import QtQuick.Controls
+import QtQuick.Layouts
+Rectangle{
+    id:task
+    radius: 10
+    height: 150
+    width: parent.width*4/5
+    color:"gray"
+    property string url: ""
+    property string tiptext:""
+    property string titletext:""
+    property string icotext:""
+    property int nums: 1
+    clip:true
+    signal mysig()
+    anchors.horizontalCenter: parent.horizontalCenter
+
+        Rectangle{
+            x: 10
+            y: 15
+            width: 120
+            height: 120
+            radius: 10
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: parent.left
+            anchors.leftMargin: 10
+            Image {
+                id:center
+                fillMode: Image.PreserveAspectFit
+                anchors.fill: parent
+                source: "../icon/image.svg"
+            }
+    }
+        Column{
+            id: column
+            x: 0
+            y: 26
+            height: 120
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: parent.left
+            anchors.leftMargin: 150
+            spacing:3
+            Row {
+                id: row
+                width: 200
+                height: 25
+                spacing: 5
+            Image {
+                id: ico
+                width: 25
+                height: 25
+                source: "../icon/网站.svg"
+                fillMode: Image.PreserveAspectFit
+            }
+            Label {
+                text: url
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.verticalCenterOffset: -20
+                font.pointSize: 14
+            }
+        }
+            Label{
+               id:title
+               text:"标题获取中。。。"
+               font.pointSize: 12
+            }
+      Row {
+            id: row2
+            width: 200
+            height: 20
+            anchors.top: parent.top
+            spacing: 5
+            anchors.topMargin: 60
+            Image {
+                id: image1
+                width: 20
+                height: 20
+                source: "../icon/type.svg"
+                fillMode: Image.PreserveAspectFit
+            }
+            Label {
+                id: label
+                text: qsTr("Label")
+                anchors.verticalCenter: parent.verticalCenter
+            }
+
+            Image {
+                id: image2
+                width: 20
+                height: 20
+                source: "../icon/时间.svg"
+                fillMode: Image.PreserveAspectFit
+            }
+
+            Label {
+                id: label1
+                text: qsTr("Label")
+                anchors.verticalCenter: parent.verticalCenter
+            }
+        }
+
+            Row {
+            id: row1
+            width: 200
+            height: 20
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 0
+
+            ProgressBar {
+                id:prob
+                property color color: "#3498DB"
+                anchors.top: parent.top
+                anchors.topMargin: 0
+                from: 0
+                to: 100
+                value:0
+                indeterminate:true
+                background: Rectangle {
+                    implicitWidth: 200
+                    implicitHeight: 20
+                    color: "#EBEDEF"
+                    radius: implicitHeight / 2
+                }
+                contentItem: Item {
+                    implicitWidth: prob.background.implicitWidth
+                    implicitHeight: prob.background.implicitHeight
+                    Rectangle {
+                        width: prob.visualPosition * parent.width
+                        height: parent.height
+                        color: prob.color
+                        radius: parent.height / 2
+                    }
+                }
+                Text{
+                    id:loadtext
+                    anchors.centerIn: parent
+                    text:"---/---"
+                    z:1
+                }
+            }
+
+            BusyIndicator {
+                id: busyIndicator
+                anchors.verticalCenter: parent.verticalCenter
+            }
+    }
+    function recvfromthread(show){
+            tip.text = show.text
+            if(typeof(show.title)!="undefined"){
+                title.text = show.title
+            }
+            if(typeof(show.ico)!="undefined"){
+                ico.source=show.ico
+            }
+            if(typeof(show.img)!="undefined"){
+                center.source="file:///"+show.img
+            }
+    }
+    function downloaing(load){
+          loadtext.text = `${load.now}/${load.total}`
+          prob.value = load.now*100/load.total
+          nums +=1
+    }
+
+}
+}
