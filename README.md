@@ -70,7 +70,10 @@ h-box是一个将视频从porn网站下载到本地,并可以收藏播放管理�
 ## H-BOX的运行需要
 - chrome,chrome driver,ffmpeg。（chrome driver,ffmpeg）安装包中已经附带了这些。
   如果chrome drive与你的chrome版本不符，请下载对应的驱动在安装目录替换。
-  
+# V2.0.4 release
+- 支持多任务
+- 加快了解析速度
+- BUG fix  
 # V2.0.4 release
 - 增加视频图标
 - BUG fix
